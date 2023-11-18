@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+         td, th{
+            border: 1px solid black;
+            padding: 10px;
+         }
+
+         caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+         }
+
+         thead, tfoot{
+            background-color: #383838 ;
+            color: white;
+         }
+
+         thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+         }
+
+         tbody, tr:nth-child(odd){
+            background-color: rgb(189, 176, 176)
+
+         }
+
+         tbody, tr:nth-child(even){
+            background-color: lightgray;
+            font-weight: bold;
+        }   
+
+         td.num{
+            text-align: right;
+         }
+
+    </style>
+</head>
+<body>
+
+    <!--
+        ANATOMIA PARA TABELAS GRANDE
+        TABLE
+            (CAPTION)= UMA LEGENDA DA TABELA DE FORA
+        THEAD
+            (TR,TD,TH)
+        TBODY
+             (TR,TD,TH)
+        TFOOT
+             (TR,TD,TH)
+             
+             TH= TITULO DE COLUNA
+             TD= DADOS
+    -->
+    
+    <h1>Tabelas Grandes</h1>
+
+
+    <table>
+
+        <caption>populaçao das unidades federais</caption>
+
+        <thead>
+
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col"">População</th>
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">113 264 211</td>
+            </tr>
+
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">564 789 123</td>
+            </tr>
+
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">113 264 211</td>
+            </tr>
+
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">113 264 211</td>
+            </tr>
+
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">113 264 211</td>
+            </tr>
+
+
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">113 264 211</td>
+            </tr>
+
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">113 264 211</td>
+            </tr>
+
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">113 264 211</td>
+            </tr>
+
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">113 264 211</td>
+            </tr>
+
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">113 264 211</td>
+            </tr>
+
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">113 264 211</td>
+            </tr>
+
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">113 264 211</td>
+            </tr>
+
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">113 264 211</td>
+            </tr>
+
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">113 264 211</td>
+            </tr>
+
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">113 264 211</td>
+            </tr>
+
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">113 264 211</td>
+            </tr>
+
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">113 264 211</td>
+            </tr>
+
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">113 264 211</td>
+            </tr>
+
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">113 264 211</td>
+            </tr>
+
+            
+                <tr>
+                    <td>Sao paulo</td>
+                    <td class="num">113 264 211</td>
+                </tr>
+
+                <tr>
+                    <td>Sao paulo</td>
+                    <td class="num">113 264 211</td>
+                </tr>
+            
+                <tr>
+                    <td>Sao paulo</td>
+                    <td class="num">113 264 211</td>
+                </tr>
+
+                <tr>
+                    <td>Sao paulo</td>
+                    <td class="num">113 264 211</td>
+                </tr>
+
+                <tr>
+                    <td>Sao paulo</td>
+                    <td class="num">113 264 211</td>
+                </tr>
+
+               
+
+        </tbody>
+        <tfoot>
+
+            <tr>
+             <th scope="row">Total de  habitantes</th>
+                <td><strong>122 456 789</strong></td>
+            </tr>
+
+        </tfoot>
+
+
+    </table>
+</body>
+</html>
