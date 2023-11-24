@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <h1>Meu ssite Principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut doloremque repudiandae incidunt laborum nisi, a aliquam minus, minima temporibus qui magnam obcaecati quo ratione. Porro ipsam veritatis error ab incidunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis necessitatibus unde expedita eius, soluta corporis debitis porro nesciunt. Aliquam facere placeat recusandae deleniti mollitia perferendis aliquid sunt asperiores, consectetur modi.</p>
+
+    <iframe src="pag006.html" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+    <!--
+        sandbox="sandbox" (bloqueia qualquer tipo de acesso que outros sites que esteja dentro do iframe tentem fazer! Uma proteçao a mais a ataques.)
+
+        referrerpolicy="no-referrer" (o que ta carregado dentro do iframe, o conteudo ele não irá coletar nenhum tipo de informaçao do usuario.) os dois deixam bem mais seguros.
+
+        sandbox="allow-same-origin allow-forms allow-scripts" (estou pertindo nesse iframe coisas da MESMA ORIGEM,USO DE FORMULARIOS, E DE SCRIPTS )
+    -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsa fugiat nulla, dolor quibusdam consequuntur dolorem exercitationem deserunt pariatur alias sunt, consectetur quod aliquam veniam officia corrupti mollitia, amet explicabo!Lorem</p>
+</body>
+</html>
