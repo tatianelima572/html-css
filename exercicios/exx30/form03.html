@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    
+    <form action="cadrasto.html" method="post" autocomplete="off">
+        <div>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30"
+            autocomplete="username" placeholder="Digite seu nome">
+        </div>
+
+        <div>
+            <label for="imeedia">Media</label>
+            <input type="number" name="nome" id="imedia" required min="0" max="10"
+            autocomplete="username" placeholder="0 a 14" step="0.1" value="5"
+        </div>
+
+        <div>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="mes" id="imes" value="2004-03">
+        </div>  
+
+        <div>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia" value="2004-03-14">
+        </div>
+
+        <div>
+            <label for="ihora">Horario da prova</label>
+            <input type="time" name="hora" id="ihora">
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar agora">
+        </div>
+    </form>
+
+</body>
+</html>
