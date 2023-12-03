@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <!-- 
+
+            label é importante para fazer a relaçao entre qual o objeto de formulário, e qual a entiqueda dele, a relaçao entre um e outro.
+            OBS: Não se faz formulario sem relacionar o LABEL e  o IMPUT, seu controle, seu elemento. Se nao dificultar o elemento de busca, o navegador pra saber qual CAIXA esta relacionada  com qual LABEL
+
+        o Action é uma ação  que junta a  funcionar junto com o input type SUBMIT, para ENVIAR algo
+        autocomplete="off" serve para nao mostrar seu nome, quando o  for digitar.
+
+        mthod="GET" Os dados são anexados à URL como parâmetros de consulta. Isso significa que os dados são visíveis na barra de endereços do navegador. Exemplo: http://exemplo.com/recurso?nome=valor&idade=25.
+
+        mthod="POST" Os dados são enviados no corpo da solicitação HTTP, portanto, não são visíveis na URL.
+    -->
+
+    <h1>Meeu primeiro formulario</h1>
+    <form action="cadrasto.php" method="POST" autocomplete="on">
+
+        <p>
+            <label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+
+        <p><label for="isobrenome">Sobrenome:</label>
+             <input type="text" name="sobrenome" id="isobrenome">
+            </p>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
