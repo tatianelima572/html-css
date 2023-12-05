@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>formulário</h1>
+
+    <form action="" method="get" autocapitalize="on">
+
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <!--
+                quando for o input RADIO, deve ter o mesmo name
+
+                exemplo: o name do label, tem q ser o mesmo do input
+            -->
+
+           <label for="isexo">Maculino</label>
+           <input type="radio" name="sexo" id="isexo">
+
+           <label for="ifem">Feminino</label>
+           <input type="radio" name="sexo" id="ifem">
+
+           <legend>Esportes Favoritos</legend>
+
+            <div>
+                <label for="ibasquete">Baquete</label>
+                <input type="checkbox" name="basquete" id="ibasquete">
+            </div>
+
+            <div>
+                <label for="ifuter">Futebol</label>
+                <input type="checkbox" name="futer" id="ifuter">
+            </div>
+
+            <div>
+                <label for="içao">Nataçao</label>
+               <input type="checkbox" name="açao" id="iaçao">
+            </div>
+
+            <div>
+                <label for="itenis">Tenis</label>
+                <input type="checkbox" name="tenis" id="itenis">
+            </div>
+
+
+
+        </fieldset>
+
+
+
+
+
+
+
+        <input type="submit" value="Enviar">
+    <input type="reset" value="Excluir">    
+    </form>
+</body>
+</html>
