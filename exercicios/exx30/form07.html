@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+   <form action="" method="post">
+       
+       <div>
+           <label for="iestado">Estado</label>
+           <select name="estado" id="iestado">
+           <option value="" selected>escolha aqui</option>
+           <optgroup label="regiao sudeste">
+               <option value="MG">minas gerais</option>
+               <option value="RJ">rio de janeiro</option>
+               <option value="SP">sao paulo</option>
+           </optgroup>
+
+
+            <optgroup label="regiao nordeste">
+                <option value="MA">maranhao</option>
+                <option value="PE">pernambuco</option>
+                <option value="RN">rio grande do norte</option>
+            </optgroup>
+               </select>
+       </div>
+
+
+       <div>
+        <label for="iprof">Profissao</label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+
+        <datalist id="lstprof">
+
+            <option value="ADM">Administrador</option>
+            <option value="CN">Contabilista</option>
+            <option value="DEV">Desenvolvedor</option>
+            <option value="PF">Professor</option>
+
+        </datalist>
+
+
+
+
+       </div>
+
+
+
+   </form>
+
+</body>
+</html>
