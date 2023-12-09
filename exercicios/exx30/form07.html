@@ -6,25 +6,31 @@
     <title>formulario</title>
 </head>
 <body>
-   <form action="" method="post">
+   <form action="" method="post">                       <!--Todo formulario que usa "GET" ele tem um limite de 3mil   -->
        
        <div>
-           <label for="iestado">Estado</label>
+           <label for="iestado">Estado</label>                        <!--label elemento-->
            <select name="estado" id="iestado">
            <option value="" selected>escolha aqui</option>
-           <optgroup label="regiao sudeste">
+
+           <optgroup label="regiao sudeste">                         <!--label atributo-->
                <option value="MG">minas gerais</option>
                <option value="RJ">rio de janeiro</option>
                <option value="SP">sao paulo</option>
            </optgroup>
 
 
-            <optgroup label="regiao nordeste">
+            <optgroup label="regiao nordeste">                       <!--label atributo-->                                    
+        
                 <option value="MA">maranhao</option>
                 <option value="PE">pernambuco</option>
                 <option value="RN">rio grande do norte</option>
             </optgroup>
                </select>
+
+               <!--
+                A tag <optgroup> é usada dentro de um elemento <select> para agrupar opções relacionadas. Ela apresenta um rótulo para um grupo de opções.
+               -->
        </div>
 
 
@@ -32,17 +38,32 @@
         <label for="iprof">Profissao</label>
         <input type="text" name="prof" id="iprof" list="lstprof">
 
+        <!--
+            O list  no elemento input esta terligado com o id="" no <datalist>, irá  fazer com que apareça sua lista assim que clicar.
+                 permite que os usuários vejam sugestões ou opções predefinidas à medida que digitam texto em um campo de entrada. 
+        -->
+
         <datalist id="lstprof">
 
             <option value="ADM">Administrador</option>
             <option value="CN">Contabilista</option>
             <option value="DEV">Desenvolvedor</option>
             <option value="PF">Professor</option>
-
         </datalist>
 
+      
 
+        <div>
+            <label for="imsg">Mensagem</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </div>
 
+        <!--
+            A tag <textarea> é utilizada para criar uma área de texto expansível onde os usuários podem inserir múltiplas linhas de texto. 
+
+            COLS: Especifica o número de colunas visíveis na área de texto. 
+            ROWS: Especifica o número de linhas visíveis na área de texto.
+        -->
 
        </div>
 

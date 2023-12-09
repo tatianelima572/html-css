@@ -8,6 +8,10 @@
 <body>
     <form action="" method="get">
 
+        <!--
+        input type="color" cria um controle de seleção de cor que permite aos usuários escolher uma cor usando um seletor de cores específico do navegador.
+        -->
+
         <div>
             <label for="icor">Cor</label>
             <input type="color" name="color" id="icor" value="#00f00f">
@@ -15,7 +19,11 @@
 
         <div>
             <label for="inivel">Nível</label>
-            <input type="range" name="nivel" id="inivel" min="0" max="100" value="1">
+            <input type="range" name="nivel" id="inivel" min="0" max="100" value="1">   
+
+            <!-- input range: Controle deslizante-->
+            <!-- value: Define o valor inicial do controle deslizante (neste caso, 1).-->
+
         </div>
 
         <div>
@@ -23,6 +31,11 @@
             <input type="file" name="foto" id="ifoto">
         </div>
 
+            <!--type é um atributo
+                
+             input type="file" cria um campo de entrada de arquivo que permite aos usuários selecionar arquivos do seu dispositivo local para serem enviados a um servidor web. Esse tipo de campo é frequentemente usado em formulários para permitir o upload de arquivos, como imagens, documentos, vídeos, etc.
+            
+            -->
 
         <input type="submit" value="enviar">
         <input type="reset" value="excluir"
