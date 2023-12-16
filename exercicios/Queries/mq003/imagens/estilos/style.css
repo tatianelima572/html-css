@@ -21,8 +21,8 @@ body{
 }
 
 main{
-    background-color: rgba(255, 255, 255, 0.612);
-    width: 400px;
+    background-color: rgba(255, 255, 255, 0.459);
+    width: 700px;
     margin-top: 20px;
     margin: auto;
     border-radius: 10px;
@@ -35,8 +35,8 @@ h1{
     font-size: 2em;
 }
 
-img#iphone{display: block;}
-img#tablet{display: none;}
+img#iphone{display: block;  margin: auto;}
+img#tablet{display: none; margin: auto;}
 img#print{display: none;}
-img#pc{display: none;}
-img#tv{display: none;}
+img#pc{display: none; margin: auto;}
+img#tv{display: none; margin: auto;}

@@ -8,7 +8,28 @@
 
 
 @media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url('../back-print.jpg');   /*desecessario*/
+    }
 
+    main{
+        border: 2px solid black;
+    }
+
+    main::after{
+        content: 'essa impressão foi feita por Tatianne  Lima';
+        text-decoration: overline;
+    }
+    
+    main h1{
+        color: black;
+    }
+    
+   
+    
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){    /*TABLET*/
@@ -38,13 +59,14 @@
 }
 
 @media screen and (min-width: 1200px) {    /*GRANDES TELAS*/
-    body{
+    
+        body{
         background-image: url(../back-tv.jpg);
         img#iphone{display: none;}
         img#tablet{display: none;}
         img#print{display: none;}
         img#pc{display: none;}
         img#tv{display: block;}
-    }
+        }
 
 }
