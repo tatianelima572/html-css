@@ -1,5 +1,75 @@
 @charset "UTF-8";
 
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 body{
   background-color: rgba(108, 34, 177, 0.459);
+}
+
+header{
+    background-color: rgb(163, 160, 160);
+}
+
+header h1{
+    padding: 10px;
+    text-align: center;
+}
+
+i#burguer{
+    background-color: rgba(75, 73, 73, 0.925);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i#burguer:hover{
+    background-color: rgba(255, 192, 203, 0.689);
+    color: black;
+}
+
+menu{
+    display: block;
+}
+
+menu > ul{
+    list-style-type: none;
+}
+
+menu a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(98, 94, 94);
+    color: white;
+    border-top:  2px solid gray;
+}
+
+menu a:hover{
+    background-color: rgb(116, 114, 114);
+}
+
+main{
+    width: 90vw;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+article h2{
+    padding-bottom: 20px;
+}
+
+article p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    
 }

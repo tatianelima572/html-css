@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Query</title>
+    <title>Media Queries</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"
+   
 </head>
+
 <body>
-    
+   
     <header>
         <h1>Meu Site </h1>
-        <menu>
+      <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+      
+        <menu id="itens">
+            
             <ul>
                 <li><a href="">Opção 1</a></li>
                 <li><a href="">Opção 2</a></li>
@@ -21,20 +27,33 @@
             </ul>
         </menu>
     </header>
-        <main>
+        <main >
             <article>
                 <h2>Testando Media Queries</h2>
                 <p>Em linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa. Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor, que serão interpretadas pelo leitor de acordo com seus conhecimentos linguísticos e culturais. Seu tamanho é variável.
 
                     “Conjunto de palavras e frases articuladas, escritas sobre qualquer suporte”.[1]
                     
-                    “Obra escrita considerada na sua redação original e autêntica (por oposição a sumário, tradução, notas, comentários, etc.)”.[2]
+                    “Obra escrita considerada na sua redação original e autêntica (por oposição a sumário, tradução, notas, comentários, etc.)”<br><br>
+                    
                     
                     "Um texto é uma ocorrência linguística, escrita ou falada de qualquer extensão, dotada de unidade sociocomunicativa, semântica e formal. É uma unidade de linguagem em uso."[3]
                     
-                    O interesse pelo texto como objeto de estudo gerou vários trabalhos importantes de teóricos da Linguística Textual, que percorreram fases diversas cujas características principais eram transpor os limites da frase descontextualizada da gramática tradicional e ainda incluir os relevantes papéis do autor e do leitor na construção de textos.</p>
+                    O interesse pelo texto como objeto de estudo gerou vários trabalhos importantes de teóricos da Linguística Textual, que percorreram fases diversas cujas características principais eram transpor os limites da frase descontextualizada da gramática tradicional e ainda incluir os relevantes papéis do autor e do leitor na construção de textos.</p><br>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cupiditate expedita dolore quidem quae maxime quibusdam enim sapiente quisquam tempore. Maxime quae facere ducimus repudiandae aut fugit atque temporibus sequi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, dignissimos exercitationem, iste suscipit modi, illum ipsa ducimus delectus consequuntur ratione quidem earum id? Voluptate qui ab, atque optio sapiente earum!</p>
             </article>
         </main>
+
+        <script>
+            function clickMenu() {
+                if (itens.style.display == 'block'){
+                    itens.style.display =  'none'
+                } else{
+                    itens.style.display = 'block'
+                }
+            }
+        </script>
 
 </body>
 </html>
